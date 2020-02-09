@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>EditAlunos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Matrícula</ion-label>
+      <ion-input type="text" name="id" [(ngModel)]="aluno.id"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" name="nome" [(ngModel)]="aluno.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Ano de Escolaridade</ion-label>
+      <ion-input type="text" name="ano" [(ngModel)]="aluno.ano"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Curso</ion-label>
+      <ion-input type="text" name="curso" [(ngModel)]="aluno.curso"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button color="primary" block (click)="save()">
+    Salvar
+  </ion-button>
+</ion-content>

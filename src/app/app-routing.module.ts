@@ -5,6 +5,18 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'aluno',
+    loadChildren: () => import('./pages/aluno/aluno.module').then( m => m.AlunoPageModule)
+  },
+  {
+    path: 'create-aluno',
+    loadChildren: () => import('./pages/form-alunos/form-alunos.module').then( m => m.FormAlunosPageModule)
+  },
+  {
+    path: 'form-alunos/:id',
+    loadChildren: () => import('./pages/form-alunos/form-alunos.module').then( m => m.FormAlunosPageModule)
   }
 ];
 @NgModule({

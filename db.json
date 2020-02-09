@@ -1,0 +1,76 @@
+{
+  "professores": [
+    {
+      "id": 1,
+      "nome": "Oriovaldo Tiel",
+      "disciplina": "MIE"
+    },
+    {
+      "id": 2,
+      "nome": "Barroso",
+      "disciplina": "Física"
+    },
+    {
+      "id": 3,
+      "nome": "R. Boynard",
+      "disciplina": "PASE"
+    }
+  ],
+  "alunos": [
+    {
+      "id": 20193331,
+      "nome": "Vinícius Waquim",
+      "ano": "3",
+      "curso": "Eletromecânica"
+    },
+    {
+      "id": 20192332,
+      "nome": "João 'Jahmall' Victor",
+      "ano": "2",
+      "curso": "Eletromecânica"
+    },
+    {
+      "id": 20193213,
+      "nome": "Gabriel 'Morango' Areas",
+      "ano": 3,
+      "curso": "Análises Clínica"
+    },
+    {
+      "id": 20192104,
+      "nome": "Dylan 'Kibyson' Pires",
+      "ano": 2,
+      "curso": "ADM"
+    },
+    {
+      "id": 20191315,
+      "nome": "João 'Sadazin' Marvila",
+      "ano": 1,
+      "curso": "Eletromecânica"
+    },
+    {
+      "id": 20193326,
+      "nome": "Nícolas 'Grilo' Souza",
+      "ano": "3",
+      "curso": "Eletromecânica"
+    },
+    {
+      "id": "20193407",
+      "nome": "Mariana Krajah",
+      "ano": "3",
+      "curso": "Enfermagem"
+    },
+    {
+      "id": "20193108",
+      "nome": "Herberty 'Farol' Souza",
+      "ano": "3",
+      "curso": "ADM"
+    }
+  ],
+  "funcionarios": [
+    {
+      "id": 1,
+      "nome": "Alexandre",
+      "funcao": "inspetor"
+    }
+  ]
+}

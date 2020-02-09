@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title style="text-align: center; font-weight: bold;">Alunos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Lista de itens-->
+  <ion-list>
+    <ion-item-sliding *ngFor="let a of alunos | async">
+      <ion-item (click)="editAluno(a.id)">
+          <strong class="registration">{{a.id}}</strong>
+          <p class="name">{{a.nome}}</p>
+      </ion-item>
+      <ion-item-options side="start">
+        <ion-button color="danger" (click)="removeAluno(a.id)">
+          <ion-icon name="trash"></ion-icon>
+          Excluir
+        </ion-button>
+      </ion-item-options>
+  
+    </ion-item-sliding>
+  </ion-list>
+  <!-- Botão de Adicionar-->
+  <ion-fab horizontal="center">
+    <ion-fab-button (click)="addAluno()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
