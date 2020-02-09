@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="dark">
     <button (click)="back()" style="position: absolute; top: 3px; padding: 10px; background-color: #ff00; z-index: 1;">
-      <ion-icon slot="start" color="light" size="large" name="arrow-back" class="round"></ion-icon>
+      <ion-icon slot="start" color="light" size="large" name="arrow-dropleft-circle" class="round"></ion-icon>
     </button>
     <ion-title style="text-align: center; font-weight: bold;">Funcionários</ion-title>
   </ion-toolbar>
@@ -11,7 +11,7 @@
   <!-- Lista de itens -->
   <ion-list>
     <ion-item-sliding *ngFor="let f of funcionarios | async">
-      <ion-item (click)="editFuncionarios(f.id)">
+      <ion-item (click)="editFuncionario(f.id)">
         <ion-label>{{f.nome}}</ion-label>
         <ion-label color="primary">{{f.funcao}}</ion-label>
       </ion-item>

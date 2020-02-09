@@ -27,6 +27,10 @@ export class FormFuncionariosPage implements OnInit {
     this.router.navigateByUrl('/funcionarios');
   }
 
+  cancel() {
+    this.router.navigateByUrl('/funcionarios');
+  }
+
   ngOnInit() {
   }
 

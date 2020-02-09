@@ -1,25 +1,31 @@
 <ion-header>
   <ion-toolbar color="dark">
-    <ion-title style="text-align: center; font-weight: bold;">Formulário Professor</ion-title>
+    <button (click)="cancel()"
+      style="position: absolute; top: 3px; padding: 10px; background-color: #ff00; z-index: 1;">
+      <ion-icon slot="start" color="light" size="large" name="backspace" class="round"></ion-icon>
+    </button>
+    <ion-title style="text-align: center; font-weight: bold;">Formulário de Funcionário</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
   <ion-list>
     <ion-item>
-      <ion-label stacked>Matrícula</ion-label>
+      <ion-label stacked class="label">Matrícula</ion-label>
       <ion-input type="text" name="id" [(ngModel)]="funcionario.id"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label stacked>Nome</ion-label>
+      <ion-label stacked class="label">Nome</ion-label>
       <ion-input type="text" name="nome" [(ngModel)]="funcionario.nome"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label stacked>Função</ion-label>
+      <ion-label stacked class="label">Função</ion-label>
       <ion-input type="text" name="funcao" [(ngModel)]="funcionario.funcao"></ion-input>
     </ion-item>
   </ion-list>
-  <ion-button horizontal="center" color="primary" (click)="save()">
-    Salvar
-  </ion-button>
+  <ion-fab horizontal="center">
+    <ion-button horizontal="center" color="primary" (click)="save()">
+      Salvar
+    </ion-button>
+  </ion-fab>
 </ion-content>

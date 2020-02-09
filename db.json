@@ -14,6 +14,21 @@
       "id": 3,
       "nome": "Boynard",
       "disciplina": "PASE"
+    },
+    {
+      "id": "89172",
+      "nome": "Alzira",
+      "disciplina": "Química"
+    },
+    {
+      "id": "023719",
+      "nome": "Potiara",
+      "disciplina": "Geografia"
+    },
+    {
+      "id": "1230082",
+      "nome": "Rui",
+      "disciplina": "Orientação de TCC"
     }
   ],
   "alunos": [
@@ -76,6 +91,16 @@
       "id": "8931",
       "nome": "Augusto",
       "funcao": "Coordenador"
+    },
+    {
+      "id": "228882179",
+      "nome": "Carcereiro",
+      "funcao": "Inspetor"
+    },
+    {
+      "id": "88279",
+      "nome": "Roberta",
+      "funcao": "Secretária"
     }
   ]
 }

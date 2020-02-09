@@ -27,6 +27,10 @@ export class FormAlunosPage implements OnInit {
     this.router.navigateByUrl('/aluno');
   }
 
+  cancel() {
+    this.router.navigateByUrl('/aluno');
+  }
+
   ngOnInit() {
   }
 

@@ -34,7 +34,7 @@ export class AlunoPage implements OnInit {
   }
 
   back() {
-    this.router.navigate(['academico']);
+    this.router.navigate(['']);
   }
 
   ngOnInit() {

@@ -27,6 +27,10 @@ export class FormProfessoresPage implements OnInit {
     this.router.navigateByUrl('/professores');
   }
 
+  cancel() {
+    this.router.navigateByUrl('/professores');
+  }
+
   ngOnInit() {
   }
 
