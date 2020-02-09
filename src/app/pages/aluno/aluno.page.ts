@@ -35,6 +35,11 @@ export class AlunoPage implements OnInit {
     this.api.delete(id).subscribe(data => { this.getAll(); } );
   }
 
+  back() {
+    console.log('yow');
+    this.router.navigate(['academico']);
+  }
+
   ngOnInit() {
   }
 

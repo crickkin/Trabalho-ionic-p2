@@ -1,1 +1,16 @@
 
+.button {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.button:active {
+    background-color: #aa2255;
+    color: #fff;
+}

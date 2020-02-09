@@ -23,7 +23,7 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () =>
-              import('../pages/aluno/aluno.module').then(m => m.AlunoPageModule)
+              import('../tab2/tab2.module').then(m => m.Tab2PageModule)
           }
         ]
       },
