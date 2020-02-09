@@ -1,9 +1,33 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Funcionarios</ion-title>
+  <ion-toolbar color="dark">
+    <button (click)="back()" style="position: absolute; top: 3px; padding: 10px; background-color: #ff00; z-index: 1;">
+      <ion-icon slot="start" color="light" size="large" name="arrow-back" class="round"></ion-icon>
+    </button>
+    <ion-title style="text-align: center; font-weight: bold;">Funcionários</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <!-- Lista de itens -->
+  <ion-list>
+    <ion-item-sliding *ngFor="let f of funcionarios | async">
+      <ion-item (click)="editFuncionarios(f.id)">
+        <ion-label>{{f.nome}}</ion-label>
+        <ion-label color="primary">{{f.funcao}}</ion-label>
+      </ion-item>
+      <ion-item-options side="start">
+        <ion-button color="danger" (click)="removeFuncionario(f.id)">
+          <ion-icon name="trash"></ion-icon>
+          Excluir
+        </ion-button>
+      </ion-item-options>
+      
+    </ion-item-sliding>
+  </ion-list>
+  <!-- Botão de Adicionar -->
+  <ion-fab horizontal="center">
+    <ion-fab-button (click)="addFuncionario()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

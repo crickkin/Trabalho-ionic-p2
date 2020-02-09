@@ -27,7 +27,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/professores/professores.module').then( m => m.ProfessoresPageModule)
   },
   {
-    path: 'form-professores',
+    path: 'create-professor',
+    loadChildren: () => import('./pages/form-professores/form-professores.module').then( m => m.FormProfessoresPageModule)
+  },
+  {
+    path: 'form-professores/:id',
     loadChildren: () => import('./pages/form-professores/form-professores.module').then( m => m.FormProfessoresPageModule)
   },
   {
@@ -35,7 +39,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/funcionarios/funcionarios.module').then( m => m.FuncionariosPageModule)
   },
   {
-    path: 'form-funcionarios',
+    path: 'create-funcionario',
+    loadChildren: () => import('./pages/form-funcionarios/form-funcionarios.module').then( m => m.FormFuncionariosPageModule)
+  },
+  {
+    path: 'form-funcionarios/:id',
     loadChildren: () => import('./pages/form-funcionarios/form-funcionarios.module').then( m => m.FormFuncionariosPageModule)
   }
 ];

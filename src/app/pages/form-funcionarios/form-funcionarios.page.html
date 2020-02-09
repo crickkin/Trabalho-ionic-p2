@@ -1,9 +1,25 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>FormFuncionarios</ion-title>
+  <ion-toolbar color="dark">
+    <ion-title style="text-align: center; font-weight: bold;">Formulário Professor</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Matrícula</ion-label>
+      <ion-input type="text" name="id" [(ngModel)]="funcionario.id"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Nome</ion-label>
+      <ion-input type="text" name="nome" [(ngModel)]="funcionario.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Função</ion-label>
+      <ion-input type="text" name="funcao" [(ngModel)]="funcionario.funcao"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button horizontal="center" color="primary" (click)="save()">
+    Salvar
+  </ion-button>
 </ion-content>

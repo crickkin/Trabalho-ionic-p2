@@ -19,7 +19,6 @@ export class AlunoPage implements OnInit {
 
   async getAll() {
     this.alunos = this.api.getAll();
-    this.alunos.subscribe(r => console.log(r) );
   }
 
   addAluno() {
@@ -27,7 +26,6 @@ export class AlunoPage implements OnInit {
   }
 
   editAluno(id: number) {
-    console.log(id);
     this.router.navigate(['form-alunos', id]);
   }
 
@@ -36,7 +34,6 @@ export class AlunoPage implements OnInit {
   }
 
   back() {
-    console.log('yow');
     this.router.navigate(['academico']);
   }
 

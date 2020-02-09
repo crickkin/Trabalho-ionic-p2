@@ -1,4 +1,4 @@
-export class Produto {
+export class Professor {
     matricula: number;
     nome: string;
     disciplina: string;

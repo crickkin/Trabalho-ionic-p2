@@ -12,7 +12,7 @@
     },
     {
       "id": 3,
-      "nome": "R. Boynard",
+      "nome": "Boynard",
       "disciplina": "PASE"
     }
   ],
@@ -68,9 +68,14 @@
   ],
   "funcionarios": [
     {
-      "id": 1,
-      "nome": "Alexandre",
-      "funcao": "inspetor"
+      "id": "6666666",
+      "nome": "Federal",
+      "funcao": "Inspetor"
+    },
+    {
+      "id": "8931",
+      "nome": "Augusto",
+      "funcao": "Coordenador"
     }
   ]
 }
